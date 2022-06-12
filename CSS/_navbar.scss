@@ -1,0 +1,88 @@
+
+
+#navbar-desktop{
+    display: flex;
+    justify-content:space-between;
+    padding: 18px 35px;
+    background-color: $primary-color2;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    opacity: 0.9;
+    transition: ease-in-out 0.5s;
+    z-index: 100;
+    .logo {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        cursor: pointer;
+    }
+    h1 {
+        font-family: $font-logo;
+        font-size: 2em;
+        color: $primary-font-color;
+    }
+    .navlinks-desktop {        
+        display: none;
+    }
+    @media (min-width: 770px) {
+        & {
+            padding: 20px 60px;
+        }
+        a {
+            text-decoration: none;
+            color: $heading-font-color;
+            font-family: $sub-heading-font;
+        }
+        a:hover {
+            color: $primary-font-color;
+        }
+        .logo {
+            transition: transform .3s ease-out;
+        }
+        .logo:hover {
+            transform: translate(-5px, 0);
+        }   
+        .navlinks-desktop {
+            display: flex;
+            flex-direction: row;
+            width: 36.125em;
+            justify-content: space-between;
+            font-size: 0.9em;
+            align-items: center;
+            // a > span {
+
+            // }    
+        }
+        .nav-but-wrap {
+            display: none;
+        }
+    }
+    @media (min-width: 1050px){
+        .navlinks-desktop {
+            font-size: 1em;
+        }
+    }
+}
+#navbar-moblie {
+    position:absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: $primary-color1;
+    z-index: 100;
+    transition: ease 0.15s;
+    color: $heading-font-color;
+    text-align: center;
+    padding-top: 4em;
+    a {
+        text-decoration: none;
+        color: $heading-font-color;
+    }
+    .navlinks-mobile > ul > li {
+        list-style: none;
+        font-family: $sub-heading-font;
+        color: $primary-font-color;
+        padding: 4vh 0;
+    }
+}

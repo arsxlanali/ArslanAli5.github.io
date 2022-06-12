@@ -1,0 +1,156 @@
+#contact {
+  h3 {
+    color: $heading-font-color;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    left: 0;
+    font-family: $heading-font;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1600px;
+    div {
+      width: 30vw;
+    }
+  }
+  // Fonts
+
+  // Helpers
+  @mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  // Grid
+  .row {
+    @include clearfix;
+    margin: -20px 0;
+    .col {
+      //padding: 0 20px;
+      float: left;
+      box-sizing: border-box;
+      &.x-50 {
+        width: 100%;
+      }
+      &.x-100 {
+        width: 100%;
+      }
+    }
+  }
+
+  .content-wrapper {
+    min-height: 100%;
+    position: relative;
+  }
+
+  .get-in-touch {
+    max-width: 650px;
+    padding: 20% 0 20% 0;
+    //margin: 0 auto;
+    position: relative;
+
+    .title {
+      text-align: center;
+      font-family: Raleway, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 20px;
+      color: $primary-font-color;
+      line-height: 48px;
+      padding-bottom: 48px;
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    .form-field {
+      position: relative;
+      margin: 32px 0;
+    }
+    .input-text {
+      display: flex;
+      padding: 0 3%;
+      //margin-left: 20px;
+      width: 94%;
+      height: 38px;
+      //border-width: 0 0 2px 0;
+      //border-color: #000;
+      //font-family: Lusitana, serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus,
+      &.not-empty {
+        + .label {
+          transform: translateY(-35px);
+          color: $subheading-font-color;
+        }
+      }
+    }
+    .label {
+      position: absolute;
+      left: 3%;
+      bottom: 8px;
+      font-family: Raleway, sans-serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #888;
+      cursor: text;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .submit-btn {
+      display: inline-block;
+      background-color: $primary-color1;
+      color: $primary-font-color;
+      font-family: Raleway, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 8px 16px;
+      border: 1px solid $primary-font-color;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 770px) {
+    h3 {
+      font-size: 1.2em;
+    }
+    .get-in-touch {
+      width: 100%;
+    }
+    .input-text {
+        border-radius: 10px;
+    }
+  }
+  @media (min-width: 1050px) {
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    h3 {
+      font-size: 1.7em;
+    }
+  }
+}

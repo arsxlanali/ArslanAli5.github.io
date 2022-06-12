@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio site for Web Developer, Cloud Enthusiastic and Data Scientists">
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Dancing+Script:wght@500&family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="./Images/icon.png">
+    <link rel="stylesheet" href="./CSS/stlyes.css">
+    <script src="./JavaScript/main.js"></script>
+    
+    <script>
+      function nameFun() {
+        var x = document.getElementById("name");
+        x.classList.add("not-empty"); 
+      }
+      function emailFun() {
+        var x = document.getElementById("email");
+        x.classList.add("not-empty"); 
+      }
+      function msgFun() {
+        var x = document.getElementById("message");
+        x.classList.add("not-empty"); 
+      }
+    </script>
+    <title>Arslan Ali</title>
+</head>
+<body>
+    
+    <header>
+        <nav id="navbar-desktop">
+            <div class="logo">
+                <img src="./Images/icon.png" width="35" height="30" alt="A logo"/>
+                <h1>Arslan</h1>
+            </div>        
+            <div class="navlinks-desktop">
+                    <a href="#welcome-section"><span class="list">01.</span>About</a>
+                    <a href="#works"><span class="list">02.</span>Experience</a>
+                    <a href="#projects"><span class="list">03.</span>Works</a>
+                    <a href="#certification"><span class="list">04.</span>Credentails</a>
+                    <a href="#contact"><span class="list">05.</span>Contact</a>
+            </div>
+            <div class="nav-but-wrap">
+                <label for="check" class="menu-icon hover-target">
+                    <input type="checkbox" id="check" onclick="hamburgerMenu();"/> 
+                    <span class="menu-icon__line menu-icon__line-left"></span>
+                    <span class="menu-icon__line"></span>
+                    <span class="menu-icon__line menu-icon__line-right"></span>
+                </label>					
+            </div>
+            <div id="navbar-moblie" class="blur" style="width: 0;">
+                <aside>
+                    <nav>
+                        <div class="navlinks-mobile">
+                            <ul>
+                                
+                                <li><span class="list">01.<br></span><a href="#welcome-section" onclick="hamburgerMenu();">About</a></li>
+                                <li><span class="list">02.<br></span><a href="#works" onclick="hamburgerMenu();">Experience</a></li>
+                                <li><span class="list">03.<br></span><a href="#projects" onclick="hamburgerMenu();">works</a></li>
+                                <li><span class="list">04.<br></span><a href="#certification" onclick="hamburgerMenu();">Credentails</a></li>
+                                <li><span class="list">05.<br></span><a href="#contact" onclick="hamburgerMenu();">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+            </div>
+        </nav>
+    </header>
+    <div id="overlay" onmousedown="off();" ontouchmove="off();"></div>
+    <div class="social-div side-social">
+        <a href="https://github.com/arsxlanali" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://twitter.com/arsxlanali" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://codepen.io/arsxlanali" target="_blank"><i class="fab fa-codepen fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/arsxlanali" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+    </div>
+    <div class="email side-social"><a href="mailto:arsxlanali@gmail.com">arsxlanali@gmail.com</a></div>
+    <main>
+        <section id="welcome-section">
+            <div class="text-container">
+                <div>
+                    <h1>Hi my name is,</h1>
+                    <h2>Arslan Ali</h2>
+                    <h3>I am a Web Developer</h3>
+                    <p>A tech person keen on Web Development, Cloud Computing and Data Science, my primary objective is to leave a creative impact on my work in the area of Web Development focused on the frontend development.</p>
+                    <a href="mailto:arsxlanali@gmail.com" class="btn">
+                        <svg>
+                          <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                        </svg>
+                       Get In Touch
+                      </a>
+                </div> 
+            </div>
+            <div class="img-container">
+            </div>
+        </section>
+        <section id="works" >
+            <h3><span class="list">02.</span> Things I've Built<div class="line"></div></h3>
+            <div class="work w1">
+                <img src="./Images/p1.png" alt="Easy Bank Landing Page" onclick="location.href='https://arsxlanali.tech/Easy-Bank-Landing-Page/'" style="cursor: pointer;"/>
+                <div>
+                    <h5>Web works</h5>
+                    <h4>Easy Bank Landing Page</h4>
+                    <p class="description">This project is a challenge from the frontendmentor, which is to create the project as close as possible to prototypes.</p>
+                    <p class="technology"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+                    <a href="https://github.com/arsxlanali/Easy-Bank-Landing-Page/" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="work w2">
+                
+                <div>
+                    <h5>Web works</h5>
+                    <h4>Landing Page</h4>
+                    <p class="description">This project is a challenge from the frontendmentor, which is to create the project as close as possible to prototypes.</p>
+                    <p class="technology"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+                    <a href="https://github.com/arsxlanali/Landing-Page" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                </div>
+                <img src="./Images/p2.png" alt="work Image" onclick="location.href='https://arsxlanali.tech/Landing-Page/'" style="cursor: pointer;"/>
+            </div>
+            <div class="work w1">
+                <img src="./Images/p3.jpg" alt="work Image" onclick="location.href='https://arsxlanali.tech/Survey-Form/'" style="cursor: pointer;"/>
+                <div>
+                    <h5>Web works</h5>
+                    <h4>Survery Form</h4>
+                    <p class="description">This project is the FreeCodeCamp challenge of designing the documentation page using HTML, CSS & JavaScript. </p>
+                    <p class="technology"><span>HTML</span><span>CSS</span></p>
+                    <a href="https://github.com/arsxlanali/Survey-Form/" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h3><div class="line"></div><span class="list">03.</span>Others Projects <div class="line"></div></h3>
+            <div>
+                <div class="grid-item">
+                    <div class="project-icon">
+                        <a href="https://github.com/arsxlanali/Malware-Detection" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <i class="far fa-folder"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Malware Detection</h5>
+                        <p>This project uses Data Science techniques to classify the infected files and benign files using their PE header.</p>
+                        <p><span>Python</span><span>Sklearn</span><span>Pandas</span></p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="project-icon">
+                        <a href="https://github.com/arsxlanali/Mushroom-Classification" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <i class="far fa-folder"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Mushroom Classification</h5>
+                        <p>This is a Data Analytic project in which classifies the mushroom with respect to edibility using the NaievBays algorithm.</p>
+                        <p><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="project-icon">
+                        <a href="https://github.com/arsxlanali/BakeryManagementSystem" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <i class="far fa-folder"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Bakery Management System</h5>
+                        <p>A DBMS project with frontend built in C# Windows Form and with backend connectivity with MySQL.</p>
+                        <p><span>C#</span><span>Windows Forms</span><span>MySQL</span></p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="project-icon">
+                        <a href="https://github.com/arsxlanali/Bird-Classification" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <i class="far fa-folder"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Birds Classification</h5>
+                        <p>A single module of the FYP project classifies the birds using TensorFlow deep learning model in the Streamlit app.</p>
+                        <p><span>Python</span><span>Tensorflow</span><span>Streamlit</span></p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="project-icon">
+                        <a href="https://github.com/arsxlanali/Realtime-Number-Plate-Recognition" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <i class="far fa-folder"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Number Plate Reconginition</h5>
+                        <p>This project contains the code for real-time detection and recognition of number plates using TensorFlow.</p>
+                        <p><span>Python</span><span>Tensorflow</span><span>OpenCV</span></p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="project-icon">
+                        <a href="https://github.com/arsxlanali/StudentPortal" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <i class="far fa-folder"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Student Portal</h5>
+                        <p>A console-based program in c language which uses the text file as a database to perform every functionality.</p>
+                        <p><span>C</span><span>Txt File</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="certification">
+          <h3><div class="line"></div><span class="list">03.</span> Credentails <div class="line"></div></h3>
+            <div class="slider">
+                <input type="radio" name="testimonial" id="t-1" />
+                <input type="radio" name="testimonial" id="t-2" />
+                <input type="radio" name="testimonial" id="t-3" checked />
+                <input type="radio" name="testimonial" id="t-4" />
+                <input type="radio" name="testimonial" id="t-5" />
+                <div class="testimonials mb-8">
+                  <label class="item" for="t-1">
+                    <div class="mycard">
+                      <p class="cardtitle">Microsoft</p>
+                      <div>
+                        <img src="./Images/1.png" alt="nivel5" class="cardimg" />
+                      </div>
+                      <div>
+                        <p class="carddescription">MTA: Introduction to Programming Using Python - Certified 2021</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="item" for="t-2">
+                    <div class="mycard">
+                      <p class="cardtitle">IBM</p>
+                      <div>
+                        <img src="./Images/2.png" alt="nivel5" class="cardimg" />
+                      </div>
+                      <div>
+                        <p class="carddescription">Data Science Professional Certificate</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="item" for="t-3">
+                    <div class="mycard">
+                      <p class="cardtitle">Microsoft</p>
+                      <div>
+                        <img src="./Images/3.png" alt="nivel5" class="cardimg" />
+                      </div>
+                      <div>
+                        <p class="carddescription">Microsoft Certified: Azure Fundamentals</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="item" for="t-4">
+                    <div class="mycard">
+                      <p class="cardtitle">IBM</p>
+                      <div>
+                        <img src="./Images/4.png" alt="nivel5" class="cardimg" />
+                      </div>
+                      <div>
+                        <p class="carddescription">Applied Data Science Specialization</p>
+                      </div>
+                    </div>
+                  </label>
+                  <label class="item" for="t-5">
+                    <div class="mycard">
+                      <p class="cardtitle">IBM</p>
+                      <div>
+                        <img src="./Images/5.png" alt="nivel5" class="cardimg" />
+                      </div>
+                      <div>
+                        <p class="carddescription">Applied Data Science Capstone</p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="dots">
+                  <label for="t-1"></label>
+                  <label for="t-2"></label>
+                  <label for="t-3"></label>
+                  <label for="t-4"></label>
+                  <label for="t-5"></label>
+                </div>
+            </div>
+          </section>
+          <section id="contact">
+            <h3><div class="line"></div><span class="list">05.</span>Contact <div class="line"></div></h3>
+            <div class="get-in-touch">
+              <h1 class="title">Get in touch</h1>
+              <form class="contact-form row">
+                 <div class="form-field col x-50">
+                    <input id="name" class="input-text js-input" type="text" onfocus="nameFun()" required>
+                    <label class="label" for="name">Name</label>
+                 </div>
+                 <div class="form-field col x-50">
+                    <input id="email" class="input-text js-input" type="email" onfocus="emailFun()" required>
+                    <label class="label" for="email">E-mail</label>
+                 </div>
+                 <div class="form-field col x-100">
+                    <input id="message" class="input-text js-input" type="text" onfocus="msgFun()" required>
+                    <label class="label" for="message">Message</label>
+                 </div>
+                 <div class="form-field col x-100 align-center">
+                    <input class="submit-btn" type="submit" value="Submit">
+                 </div>
+              </form>
+            </div>
+
+          </div>
+          </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.btn {
+  color: $primary-font-color;
+  background: darken($secondry-color, 1.5%);
+  height: 2.4em;
+  line-height: 2.4em;
+  width: 7.3em;
+  font-size: 0.7em;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  // border-radius: 10px;
+
+  svg {
+    height: 2.4em;
+    left: 0;
+    position: absolute;
+    top: 0px; 
+    // border-radius: 10px;
+    width: 7.3em; 
+  }
+  
+  rect {
+    fill: none;
+    stroke: $primary-font-color;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+    // border-radius: 10px;
+
+  }
+
+}
+
+@media (min-width: 770px) {
+  .btn:hover {
+    background: rgba($secondry-color, 100);
+    font-weight: 900;
+    letter-spacing: 1px;
+    
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+
+@media (min-width:1250px){
+  .btn {
+    font-size: 1em;
+    width: 7.5em;
+    line-height: 2.188em;
+    svg {
+      width: 7.5em;
+    }
+  }
+}
+

@@ -1,0 +1,173 @@
+#works {
+
+    h3 {
+        color: $heading-font-color;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        position: relative;
+        left: 0;
+        font-family: $heading-font;
+        font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 1600px;
+        div {
+            width: 30vw;
+
+        }
+    }
+    .work {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 2em 0 2em 0;
+        
+        img {
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+            opacity: 0.2;
+        }
+        img:hover {
+            opacity: 1;
+            transition: opacity 0.2s ease-in;
+        }
+        div {
+            position: absolute;
+            z-index: 10;
+            h5 {
+                font-family: $sub-heading-font;
+                color: $primary-font-color;
+            }
+            h4 {
+                font-family: $heading-font;        
+                color: $heading-font-color;
+            }
+            .description{
+                font-family: $heading-font; 
+                color: $heading-font-color;
+            }
+            .technology {
+                font-family: $sub-heading-font;
+                color: $heading-font-color;
+                margin-bottom: 10px;        
+                column-gap: 10px;
+            }
+            i {
+                color: $heading-font-color;
+            }
+        }
+    }
+    .w1 {
+        flex-direction: row;
+        text-align: right;
+        div {
+            padding-right: 5px;
+            right: 0;
+        }
+        .technology > span {
+            padding-left: 10px;
+        }
+    }
+    .w2 {
+        flex-direction: row-reverse;
+        text-align: left;
+        div {
+            padding-left: 5px;
+            align-items:flex-start;
+            left: 0;    
+        }
+        .technology > span {
+            padding-right: 10px;
+        }
+    }
+    @media (min-width:770px){
+        
+        h3 {
+            font-size: 1.2em;
+        }
+        .work{
+            padding: 60px 0 60px 0;
+            width: 100%;
+            
+            img {
+                width: 38vw;
+                height: auto;
+            }
+            div {
+                right: 0;
+                h4 {
+                    font-size: 1em;
+                }
+                .description {
+                    padding: 1vw;
+                    background-color: $primary-color2;
+                    margin: 22px 0 22px 0;
+                    border-radius: 5px;
+                    width: 35vw;
+                    font-size: 0.8em;
+                }
+                .technology {
+                    font-size: 0.8em;
+                }
+                i {
+                    font-size: 0.8em;
+                }
+            }
+
+        }
+        .w2 > div{
+            width: 300px;
+        }
+    }
+    @media (min-width: 1050px)
+    {
+        h3 {
+            font-size: 1.5em;
+        }
+        .work {
+            div {
+                h4 {
+                    font-size: 1.3em;
+                }
+                .description {
+                    font-size: 1em;
+                    padding: 20px;
+                }
+                .technology {
+                    font-size: 0.9em;
+                }
+                i {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1400px){
+        h3 {
+            font-size: 1.7em;
+        }
+        .work {
+            max-width: 1600px;
+
+            div {
+                h4 {
+                    font-size: 1.5vw;
+                }
+                .description {
+                    font-size: 1.1vw;
+                    padding: 30px;
+                }
+                .technology {
+                    font-size: 1.1vw;
+                }
+                i {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}

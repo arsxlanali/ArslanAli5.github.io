@@ -1,0 +1,114 @@
+#projects {
+    // * {
+    //     border: 1px solid wheat;
+    // }
+    justify-content: center;
+
+    h3 {
+        color: $heading-font-color;
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: center;
+        font-family: $heading-font;
+        max-width: 1600px;
+        width: 100%;
+        padding: 20px 0;
+        font-size: 1.2em;
+        box-sizing:content-box;
+    }
+    div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        max-width: 1600px;
+
+        
+
+        .grid-item {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            color: $subheading-font-color;
+            font-family: $heading-font;
+            background-color: $primary-color1;
+            padding: 30px;
+            border-radius: 10px;
+            .project-icon {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 30px;
+                a > .fa-github {
+                    color: $subheading-font-color;
+                }
+                .fa-folder {
+                    color: $primary-font-color;
+                    font-size: 40px;
+                }
+
+            }
+            .project-details {
+                display: flex;
+                flex-direction: column;
+                h5 {
+                    font-size: 1em;
+                    color: $heading-font-color;
+                }
+                p > span {
+                    color: $subheading-font-color;
+                    padding-right: 7px;
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 770px){
+        h3 {
+            font-size: 1.2em;
+            padding-bottom: 60px;
+        }
+        div {
+            grid-template-columns: 1fr 1fr;
+            .grid-item {
+                .project-details {
+                    h5 {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+        
+    }
+    @media (min-width: 1050px){
+        h3 {
+            font-size: 1.5em;
+        }
+        div {
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+    }
+    @media (min-width: 1600px){
+        h3 {
+            font-size: 1.7em;
+        }
+        div {
+            .grid-item {
+                .project-details {
+                    h5 {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
